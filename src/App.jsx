@@ -16,7 +16,7 @@ function App() {
     if (char) str += "!@#$%^&*()_+[]{}";
 
     for (let i = 1; i <= length; i++) {
-      let ch = Math.floor(Math.random() * str.length() + 1);
+      let ch = Math.floor(Math.random() * str.length + 1);
       passw += str.charAt(ch);
     }
     setPassword(passw);
